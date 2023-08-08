@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --yellow: #c7f924;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  background: var(--yellow);
+}
+
+li {
+  list-style-type: none;
+}
+
+.social-icon {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon a > i {
+  font-size: 4rem !important;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.navlink {
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+  height: 7vh;
+  padding: 0 1.6rem;
+}
+
+.navlink ul {
+  display: flex;
+  gap: 15px;
+}
+
+.navlink ul a li {
+  font-size: 2.5rem;
+  display: block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background: #fff;
+  border-radius: 5rem;
+  background: var(red);
+}
+
+.hero-section {
+  height: 80vh;
+  display: grid;
+  place-content: center;
+  background-image: url(https://images.pexels.com/photos/17781404/pexels-photo-17781404/free-photo-of-wood-road-landscape-water.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.518);
+  color: whitesmoke;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 15px;
+}
+
+.hero-section h1 {
+  font-size: 5rem;
+}
+
+.hero-section p {
+  font-size: 3.5rem;
+}
+
+.btn-grouph {
+  display: grid;
+  justify-content: center;
+}
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #f86969;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  width: 150px !important;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 22px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.feature-section {
+  padding: 2em 0;
+  height: 30vh;
+  display: grid;
+}
+
+.main-intro {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.feature-section-card {
+  display: flex;
+  gap: 15px;
+  place-content: center;
+}
+
+.feature-section-card-card {
+  display: grid;
+  padding: 0.9rem;
+  border-radius: 15px;
+  place-content: center;
+  background-color: rgb(205, 50, 128);
+}
+
+.feature-section-card-card span {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.feature-section-card-card p {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.exper-section {
+  height: 100%;
+  padding: 2em 0;
+}
+
+.exper-section-card {
+  display: grid;
+}
+
+.exper-section-card-sec {
+  display: flex;
+
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.exper-section-card-sec > .text-section {
+  width: 40%;
+  display: grid;
+  gap: 5px;
+}
+
+.exper-section-card-sec > .text-section > h3 {
+  font-size: 3rem;
+}
+
+.project-sec .main-intro {
+  margin-bottom: 5vh !important;
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  padding: 0 0.5rem;
+  justify-content: center;
+  gap: 5px;
+}
+
+.project-section div {
+  display: grid;
+  gap: 15px;
+  width: 80%;
+}
+
+.about-section {
+  height: 60vh;
+  margin: 10vh 0;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-section-card {
+  display: flex;
+  padding: 0 5vh;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.about-section-card h2 {
+  font-size: 3rem;
+}
+
+.about-section-card p,
+.course {
+  width: 70%;
+  font-size: 2.5rem;
+}
+
+.course {
+  display: flex;
+  gap: 15px !important;
+}
+
+.skill {
+  margin-left: 10vh;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+form {
+  max-width: 420px;
+  margin: 5vh auto !important;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+
+[type="submit"]:hover {
+  background: #cc4949;
+}
+
+footer {
+  display: grid;
+  place-content: center;
+  height: 6vh;
+  background-color: black;
+  color: white;
+}
